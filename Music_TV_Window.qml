@@ -6,4 +6,6 @@ Rectangle {
     height: 280
     radius: 20
     color:"#000"
+    visible: false
+    property string text: "temp"
 }

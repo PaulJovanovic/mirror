@@ -4,18 +4,19 @@ import "mirrorjs.js" as Handler
 
 Rectangle {
     property alias text: iconText.text
+    property string hexcolor: "#000"
     width: 50
     height: 50
     radius: 5
-    color:"#000"
+    color: hexcolor
     Rectangle{
         radius:5
-        color:"#000"
+        color: hexcolor
         width: parent.width
         height:parent.height-10
     }
     Rectangle{
-        color:"#000"
+        color: hexcolor
         y:40
         radius:5
         width: parent.width

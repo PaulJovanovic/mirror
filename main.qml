@@ -10,34 +10,75 @@ Rectangle {
         x:570
         y:-40
     }
+    Header{
+        x:-40
+        y:-40
+    }
+
     WeatherIcon{
 
     }
     WindowSize1{
+        id: firstHealth
         text: "Health"
         x:10
         y:110
     }
     WindowSize1{
+        id: firstOutfit
         text: "Outfit"
         x:10
         y:220
     }
     WindowSize1{
+        id: firstStocks
         text: "Stocks"
         x:10
         y:330
     }
     WindowSize1{
+        id: firstMusic
         text: "Music"
         x:10
         y:440
     }
     WindowSize1{
+        id: firstTV
         text: "TV"
         x:10
         y:550
     }
+    WindowSize2{
+        id: secondHealth
+        text: "Health"
+        x:70
+        y:110
+    }
+    WindowSize2{
+        id: secondOutfit
+        text: "Outfit"
+        x:70
+        y:220
+    }
+    WindowSize2{
+        id: secondStocks
+        text: "Stocks"
+        x:70
+        y:330
+    }
+    Music_TV_Window{
+        id: secondMusic
+        text: "Music"
+        x:70
+        y:440
+    }
+    Music_TV_Window{
+        id: secondTV
+        text: "TV"
+        x:70
+        y:440
+    }
+
     PermanentWindow{
         x:784
         y:110
