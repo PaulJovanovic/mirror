@@ -8,7 +8,7 @@ Rectangle {
     height: 100
     color:"#000"
     radius:10
-    property string text: "temp"
+    property alias text: title.text
     Rectangle {
         width:150
         x:10
@@ -19,7 +19,8 @@ Rectangle {
             width:130
             color:"#000"
             Text {
-                text: "window"
+                id: title
+                text: text
                 font.pixelSize: 12
                 color:"#fff"
             }
