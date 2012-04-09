@@ -57,45 +57,109 @@ Rectangle {
         text: "Health"
         x:70
         y:110
+        Rectangle{
+            x:10
+            y:20
+            height:70
+            width:150
+            color:"#000"
+            //INSERT HEALTH APPLICATION HERE
+        }
     }
     WindowSize2{
         id: secondOutfit
         text: "Outfit"
         x:70
         y:220
+        Rectangle{
+            x:10
+            y:20
+            height:70
+            width:150
+            color:"#000"
+            //INSERT OUTFIT APPLICATION HERE
+        }
     }
     WindowSize2{
         id: secondStocks
         text: "Stocks"
         x:70
         y:330
+        Rectangle{
+            x:10
+            y:20
+            height:70
+            width:150
+            color:"#000"
+            //INSERT STOCKS APPLICATION HERE
+        }
     }
     Music_TV_Window{
         id: secondMusic
         text: "Music"
         x:70
         y:440
+        Rectangle{
+            x:10
+            y:20
+            height:250
+            width:320
+            color:"#000"
+            //INSERT MUSIC APPLICATION HERE
+        }
     }
     Music_TV_Window{
         id: secondTV
         text: "TV"
         x:70
         y:440
+        Rectangle{
+            x:10
+            y:20
+            height:250
+            width:320
+            color:"#000"
+            //INSERT TV APPLICATION HERE
+        }
     }
 
     PermanentWindow{
         text:"CTA"
         x:784
         y:110
+        Rectangle{
+            x:10
+            y:20
+            height:170
+            width:220
+            color:"#000"
+            //INSERT CTA APPLICATION HERE
+        }
     }
     PermanentWindow{
         text:"Calendar"
         x:784
-        y:300
+        y:320
+        Rectangle{
+            x:10
+            y:20
+            height:170
+            width:220
+            color:"#000"
+            //INSERT CALENDAR APPLICATION HERE
+        }
     }
     PermanentWindow{
         text:"Todo List"
         x:784
-        y:490
+        y:530
+        Rectangle{
+            x:10
+            y:20
+            height:170
+            width:220
+            color:"#000"
+            //INSERT TODOLIST APPLICATION HERE
+        }
     }
 }

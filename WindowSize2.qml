@@ -49,4 +49,10 @@ Rectangle {
             }
         }
     }
+    Rectangle{
+        y:16
+        width:parent.width
+        height:2
+        color:"#fff"
+    }
 }

@@ -38,4 +38,10 @@ Rectangle {
             onClicked: Handler.click_icon(text)
         }
     }
+    Rectangle{
+        y:16
+        width:parent.width
+        height:2
+        color:"#fff"
+    }
 }

@@ -4,7 +4,7 @@ import QtQuick 1.1
 Rectangle {
     property alias text: title.text
     width: 250
-    height: 180
+    height: 200
     color:"#000"
     radius:10
     Rectangle{
@@ -17,5 +17,11 @@ Rectangle {
             color: "#fff"
             font.pixelSize: 12
         }
+    }
+    Rectangle{
+        y:16
+        width:parent.width
+        height:2
+        color:"#fff"
     }
 }
