@@ -6,7 +6,7 @@ Rectangle {
     property alias text: title.text
     width: 340
     height: 280
-    radius: 20
+    radius: 10
     color:"#000"
     visible: false
    //property string text: "temp"
