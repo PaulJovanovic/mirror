@@ -10,13 +10,17 @@ Rectangle {
         x:570
         y:-40
     }
-    Header{
+    HeaderWeather{
+        id: secondWeather
         x:-40
         y:-40
     }
 
     WeatherIcon{
-
+        MouseArea{
+            anchors.fill:parent
+            onClicked: Handler.click_icon("Weather")
+        }
     }
     WindowSize1{
         id: firstHealth
@@ -80,14 +84,17 @@ Rectangle {
     }
 
     PermanentWindow{
+        text:"CTA"
         x:784
         y:110
     }
     PermanentWindow{
+        text:"Calendar"
         x:784
         y:300
     }
     PermanentWindow{
+        text:"Todo List"
         x:784
         y:490
     }

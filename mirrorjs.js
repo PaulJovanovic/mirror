@@ -41,6 +41,14 @@ function click_icon(app){
             secondStocks.visible = false;
         }
     }
+    else if(app == "Weather"){
+        if (secondWeather.visible == false){
+            secondWeather.visible = true;
+        }
+        else{
+            secondWeather.visible = false;
+        }
+    }
     else if(app == "Music"){
         if (secondMusic.visible == false){
             if(secondTV.visible == true){

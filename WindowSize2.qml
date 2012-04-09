@@ -26,6 +26,13 @@ Rectangle {
             }
         }
         Rectangle{
+            x:130
+            y:4
+            height:8
+            width:8
+            color:"#fff"
+        }
+        Rectangle{
             x:145
             width:10
             height:20
