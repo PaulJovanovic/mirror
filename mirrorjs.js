@@ -3,6 +3,35 @@ var secondComponent;
 var leftbar = ['Health','Outfit','Stocks','Music','TV'];
 var leftbaropen = [null,null,null,null,null]
 
+function click_secondlevel(app){
+    var healthopen = thirdHealth.visible;
+    var outfitopen = thirdOutfit.visible;
+    var stocksopen = thirdStocks.visible;
+
+    thirdHealth.visible = false;
+    thirdOutfit.visible = false;
+    thirdStocks.visible = false;
+    secondHealth.hexcolor = "#000";
+    secondOutfit.hexcolor = "#000";
+    secondStocks.hexcolor = "#000";
+
+    if (app == "Health"){
+        thirdHealth.visible = !healthopen;
+        if (thirdHealth.visible)
+            secondHealth.hexcolor = "#444";
+    }
+    else if (app == "Outfit"){
+        thirdOutfit.visible = !outfitopen;
+        if (thirdOutfit.visible)
+            secondOutfit.hexcolor = "#444";
+    }
+    else{
+        thirdStocks.visible = !stocksopen;
+        if (thirdStocks.visible)
+            secondStocks.hexcolor = "#444";
+    }
+}
+
 function click_icon(app){
     var yPos = 0;
     var open = 0;
@@ -19,6 +48,10 @@ function click_icon(app){
         else{
             firstHealth.hexcolor = "#000";
             secondHealth.visible = false;
+            if (thirdHealth.visible){
+                secondHealth.hexcolor = "#000";
+                thirdHealth.visible = false;
+            }
         }
     }
     else if(app == "Outfit"){
@@ -29,6 +62,10 @@ function click_icon(app){
         else{
             firstOutfit.hexcolor = "#000";
             secondOutfit.visible = false;
+            if (thirdOutfit){
+                thirdOutfit.visible = false;
+                secondOutfit.hexcolor = "#000";
+            }
         }
     }
     else if(app == "Stocks"){
@@ -39,6 +76,10 @@ function click_icon(app){
         else{
             firstStocks.hexcolor = "#000";
             secondStocks.visible = false;
+            if (thirdStocks.visible){
+                thirdStocks.visible = false;
+                secondStocks.hexcolor = "#000";
+            }
         }
     }
     else if(app == "Weather"){

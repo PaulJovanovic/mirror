@@ -55,6 +55,7 @@ Rectangle {
     WindowSize2{
         id: secondHealth
         text: "Health"
+        hexcolor: "#000"
         x:70
         y:110
         Rectangle{
@@ -62,13 +63,14 @@ Rectangle {
             y:20
             height:70
             width:150
-            color:"#000"
+            color: parent.color
             //INSERT HEALTH APPLICATION HERE
         }
     }
     WindowSize2{
         id: secondOutfit
         text: "Outfit"
+        hexcolor: "#000"
         x:70
         y:220
         Rectangle{
@@ -76,13 +78,14 @@ Rectangle {
             y:20
             height:70
             width:150
-            color:"#000"
+            color: parent.color
             //INSERT OUTFIT APPLICATION HERE
         }
     }
     WindowSize2{
         id: secondStocks
         text: "Stocks"
+        hexcolor: "#000"
         x:70
         y:330
         Rectangle{
@@ -90,7 +93,7 @@ Rectangle {
             y:20
             height:70
             width:150
-            color:"#000"
+            color:parent.color
             //INSERT STOCKS APPLICATION HERE
         }
     }
@@ -122,7 +125,21 @@ Rectangle {
             //INSERT TV APPLICATION HERE
         }
     }
-
+    WindowSize3{
+        id: thirdHealth
+        text: "Health"
+        visible: false
+    }
+    WindowSize3{
+        id: thirdOutfit
+        text: "Outfit"
+        visible: false
+    }
+    WindowSize3{
+        id: thirdStocks
+        text: "Stocks"
+        visible: false
+    }
     PermanentWindow{
         text:"CTA"
         x:784

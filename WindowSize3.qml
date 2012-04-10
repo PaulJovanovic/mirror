@@ -4,14 +4,15 @@ import "mirrorjs.js" as Handler
 
 Rectangle {
     property string hexcolor: "#000"
-    property alias text: title.text
-    visible: false
-    width: 170
-    height: 100
-    color:hexcolor
+    property alias text:title.text
+    x:250
+    y:110
     radius:10
+    width: 520
+    height: 320
+    color:hexcolor
     Rectangle {
-        width:150
+        width:500
         x:10
         color:hexcolor
         height:20
@@ -27,18 +28,7 @@ Rectangle {
             }
         }
         Rectangle{
-            x:130
-            y:4
-            height:8
-            width:8
-            color:"#fff"
-            MouseArea{
-                anchors.fill: parent
-                onClicked: Handler.click_secondlevel(text)
-            }
-        }
-        Rectangle{
-            x:145
+            x:495
             width:10
             height:20
             radius:10
@@ -50,7 +40,7 @@ Rectangle {
             }
             MouseArea{
                 anchors.fill: parent
-                onClicked: Handler.click_icon(text)
+                onClicked: Handler.click_secondlevel(text)
             }
         }
     }
