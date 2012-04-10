@@ -52,6 +52,12 @@ Rectangle {
         x:10
         y:550
     }
+    WindowSize1{
+        id: firstPreferences
+        text: "Pref"
+        x:10
+        y:660
+    }
     WindowSize2{
         id: secondHealth
         text: "Health"
@@ -64,7 +70,102 @@ Rectangle {
             height:70
             width:150
             color: parent.color
-            //INSERT HEALTH APPLICATION HERE
+            Rectangle{
+                width:50
+                height:10
+                color:parent.color
+                Text{
+                    color:"#999"
+                    text: "Health"
+                    anchors.centerIn: parent
+                }
+            }
+            Rectangle{
+                x:50
+                width:50
+                height:10
+                color:parent.color
+                Text{
+                    color:"#fff"
+                    text: "Exercise"
+                    anchors.centerIn: parent
+                }
+            }
+            Rectangle{
+                x:100
+                width:50
+                height:10
+                color:parent.color
+                Text{
+                    color:"#fff"
+                    text: "Sleep"
+                    anchors.centerIn: parent
+                }
+            }
+            Rectangle{
+                y:10
+                x:-1
+                height:60
+                width:2
+                //width:129
+                //height:20
+            }
+            Rectangle{
+                x:-1
+                y:70
+                width:149
+                height:2
+            }
+            Rectangle{
+                x:9
+                y:60
+                width:10
+                height:10
+            }
+            Rectangle{
+                x:29
+                y:50
+                width:10
+                height:20
+            }
+            Rectangle{
+                x:49
+                y:40
+                width:10
+                height:30
+            }
+            Rectangle{
+                x:69
+                y:30
+                width:10
+                height:40
+            }
+            Rectangle{
+                x:89
+                y:20
+                width:10
+                height:50
+                Rectangle{
+                    x:2
+                    y:2
+                    width:6
+                    height:48
+                    color:secondHealth.color
+                }
+            }
+            Rectangle{
+                color:secondHealth.color
+                x:109
+                y:20
+                width:40
+                height:40
+                Text{
+                    color:"#fff"
+                    anchors.centerIn: parent
+                    font.pixelSize: 24
+                    text: "4"
+                }
+            }
         }
     }
     WindowSize2{
@@ -80,6 +181,35 @@ Rectangle {
             width:150
             color: parent.color
             //INSERT OUTFIT APPLICATION HERE
+            Text{
+                color:"#fff"
+                text: "Today:"
+            }
+            Rectangle{
+                y:25
+                width:parent.width
+                Text{
+                    anchors.centerIn: parent
+                    color:"#fff"
+                    text: "Sweater"
+                    font.pixelSize: 24
+                }
+            }
+            Text{
+                y:35
+                color:"#fff"
+                text: "Tonight:"
+            }
+            Rectangle{
+                y:60
+                width:parent.width
+                Text{
+                    anchors.centerIn: parent
+                    color:"#fff"
+                    text: "Umbrella"
+                    font.pixelSize: 24
+                }
+            }
         }
     }
     WindowSize2{
