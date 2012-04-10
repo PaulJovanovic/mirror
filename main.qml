@@ -1,12 +1,12 @@
 // import QtQuick 1.0 // to target S60 5th Edition or Maemo 5
 import QtQuick 1.1
 import"mirrorjs.js" as Handler
-
 Rectangle {
     id:home
     width: 1024
     height: 728
     Header{
+        id:topright
         x:570
         y:-40
     }
@@ -64,38 +64,38 @@ Rectangle {
         hexcolor: "#000"
         x:70
         y:110
-        Rectangle{
+        Item{
             x:10
             y:20
             height:70
             width:150
-            color: parent.color
-            Rectangle{
+            //color: parent.color
+            Item{
                 width:50
                 height:10
-                color:parent.color
+                //color:parent.color
                 Text{
                     color:"#fff"
                     text: "Health"
                     anchors.centerIn: parent
                 }
             }
-            Rectangle{
+            Item{
                 x:50
                 width:50
                 height:10
-                color:parent.color
+                //color:parent.color
                 Text{
                     color:"#999"
                     text: "Exercise"
                     anchors.centerIn: parent
                 }
             }
-            Rectangle{
+            Item{
                 x:100
                 width:50
                 height:10
-                color:parent.color
+                //color:parent.color
                 Text{
                     color:"#999"
                     text: "Sleep"
@@ -174,12 +174,12 @@ Rectangle {
         hexcolor: "#000"
         x:70
         y:220
-        Rectangle{
+        Item{
             x:10
             y:20
             height:70
             width:150
-            color: parent.color
+            //color: parent.color
             //INSERT OUTFIT APPLICATION HERE
             Text{
                 color:"#fff"
@@ -218,12 +218,12 @@ Rectangle {
         hexcolor: "#000"
         x:70
         y:330
-        Rectangle{
+        Item{
             x:10
             y:20
             height:70
             width:150
-            color:parent.color
+            //color:parent.color
             //INSERT STOCKS APPLICATION HERE
         }
     }
