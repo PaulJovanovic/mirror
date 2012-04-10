@@ -225,6 +225,29 @@ Rectangle {
             width:150
             //color:parent.color
             //INSERT STOCKS APPLICATION HERE
+            Stock{
+                symbol: "GOOG"
+                value: 500.5
+                change: 10
+            }
+            Stock{
+                y:20
+                symbol: "MSFT"
+                value: 25.75
+                change: -2.45
+            }
+            Stock{
+                y:40
+                symbol: "MSFT"
+                value: 25.75
+                change: -2.45
+            }
+            Stock{
+                y:60
+                symbol: "MSFT"
+                value: 25.75
+                change: -2.45
+            }
         }
     }
     Music_TV_Window{
