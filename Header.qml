@@ -21,6 +21,13 @@ Rectangle {
             else{
                 night = "PM";
             }
+            if (hours == 0){
+                hours = 12;
+            }
+            else if (hours >12){
+                hours = hours-12;
+            }
+
             minutes = date.getMinutes();
             stringmin = "" + minutes;
             if (minutes < 10){
@@ -41,17 +48,15 @@ Rectangle {
     height: 140
     radius:40
     color:"#000"
-    Rectangle{
-        height:80
-        width:460
-        color:"#000"
-        radius:40
+    Item{
+        height:60
+        width:440
         y:55
         x:10
         Text {
+            anchors.centerIn: parent
             id:clock
             color:"#fff"
-            text: "Mon Feb 27 4:00 PM"
             font.pixelSize: 48
         }
     }
