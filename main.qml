@@ -26,42 +26,56 @@ Rectangle {
             onClicked: Handler.click_icon("Weather")
         }
     }
+
+    //Health Icon
     WindowSize1{
         id: firstHealth
         text: "Health"
         x:10
         y:110
     }
+
+    //Changing Room Icon
     WindowSize1{
         id: firstOutfit
         text: "Outfit"
         x:10
         y:220
     }
+
+    //Stocks Icon
     WindowSize1{
         id: firstStocks
         text: "Stocks"
         x:10
         y:330
     }
+
+    //Music Icon
     WindowSize1{
         id: firstMusic
         text: "Music"
         x:10
         y:440
     }
+
+    //TV Icon
     WindowSize1{
         id: firstTV
         text: "TV"
         x:10
         y:550
     }
+
+    //Preferences Icon
     WindowSize1{
         id: firstPreferences
         text: "Pref"
         x:10
         y:660
     }
+
+    //Health Window 2
     WindowSize2{
         id: secondHealth
         text: "Health"
@@ -172,6 +186,9 @@ Rectangle {
             }
         }
     }
+
+    //Changing Room Window 2
+    //Shows quick wardrobe advice for the day
     WindowSize2{
         id: secondOutfit
         text: "Outfit"
@@ -216,6 +233,9 @@ Rectangle {
             }
         }
     }
+
+    //Stocks Window 2
+    //Shows quick stock quotes from Google Finance
     WindowSize2{
         id: secondStocks
         text: "Stocks"
@@ -254,6 +274,9 @@ Rectangle {
             }
         }
     }
+
+    //Music Window
+    //Allows playing of music, pausing, volume increase, song selection.
     Music_TV_Window{
         id: secondMusic
         text: "Music"
@@ -268,6 +291,9 @@ Rectangle {
             //INSERT MUSIC APPLICATION HERE
         }
     }
+
+    //TV Window
+    //Allows starting television, turning off, increase in volume, channel selection.
     Music_TV_Window{
         id: secondTV
         text: "TV"
@@ -282,27 +308,41 @@ Rectangle {
             //INSERT TV APPLICATION HERE
         }
     }
+
+    //Large Health Window
+    //Shows detailed health information
     WindowSize3{
         id: thirdHealth
         text: "Health"
         visible: false
     }
+
+    //Large Changing Room Window
+    //Allows the user to put together an outfit
     WindowSize3{
         id: thirdOutfit
         text: "Outfit"
         visible: false
     }
+
+    //Large stock window
+    //Allows user to view stocks in detail and over time.
     WindowSize3{
         id: thirdStocks
         text: "Stocks"
         visible: false
     }
+
+    //Large Preferences Window
+    //Gives the user the ablility to set up Google account, Wifi Connections, location.
     WindowSize3{
         id: thirdPreferences
         text: "Preferences"
         visible: false
     }
 
+    //CTA Tracker/Traffic Information Quick Window
+    //Viewable information of traveling in Chicago
     PermanentWindow{
         hexcolor:"#444"
         text:"CTA"
@@ -317,6 +357,9 @@ Rectangle {
             //INSERT CTA APPLICATION HERE
         }
     }
+
+    //Calendar Window 1
+    //View of what to do today
     PermanentWindow{
         hexcolor:"#444"
         text:"Calendar"
@@ -331,6 +374,9 @@ Rectangle {
             //INSERT CALENDAR APPLICATION HERE
         }
     }
+
+    //Todo List Window 1
+    //Things the user wants to do/should do according to the application
     PermanentWindow{
         hexcolor:"#444"
         text:"Todo List"
