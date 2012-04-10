@@ -330,7 +330,6 @@ Rectangle {
     WindowSize3{
         id: thirdStocks
         text: "Stocks"
-        visible: false
     }
 
     //Large Preferences Window
@@ -338,12 +337,33 @@ Rectangle {
     WindowSize3{
         id: thirdPreferences
         text: "Preferences"
-        visible: false
+    }
+
+    //Large CTA Window
+    //
+    WindowSize3{
+        id: thirdCTA
+        text: "CTA"
+    }
+
+    //Large Calendar Window
+    //
+    WindowSize3{
+        id: thirdCalendar
+        text: "Calendar"
+    }
+
+    //Large Todo Window
+    //
+    WindowSize3{
+        id: thirdTodo
+        text: "Todo List"
     }
 
     //CTA Tracker/Traffic Information Quick Window
     //Viewable information of traveling in Chicago
     PermanentWindow{
+        id: firstCTA
         hexcolor:"#444"
         text:"CTA"
         x:784
@@ -361,6 +381,7 @@ Rectangle {
     //Calendar Window 1
     //View of what to do today
     PermanentWindow{
+        id: firstCalendar
         hexcolor:"#444"
         text:"Calendar"
         x:784
@@ -378,6 +399,7 @@ Rectangle {
     //Todo List Window 1
     //Things the user wants to do/should do according to the application
     PermanentWindow{
+        id: firstTodo
         hexcolor:"#444"
         text:"Todo List"
         x:784

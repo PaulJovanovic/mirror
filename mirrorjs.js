@@ -8,15 +8,24 @@ function click_secondlevel(app){
     var outfitopen = thirdOutfit.visible;
     var stocksopen = thirdStocks.visible;
     var preferencesopen = thirdPreferences.visible;
+    var ctaopen = thirdCTA.visible;
+    var calendaropen = thirdCalendar.visible;
+    var todoopen = thirdTodo.visible;
 
     thirdHealth.visible = false;
     thirdOutfit.visible = false;
     thirdStocks.visible = false;
     thirdPreferences.visible = false;
+    thirdCTA.visible = false;
+    thirdCalendar.visible = false;
+    thirdTodo.visible = false;
     secondHealth.hexcolor = "#222";
     secondOutfit.hexcolor = "#222";
     secondStocks.hexcolor = "#222";
     firstPreferences.hexcolor = "#444";
+    firstCTA.hexcolor = "#444";
+    firstCalendar.hexcolor = "#444";
+    firstTodo.hexcolor = "#444";
     if (secondHealth.visible){
         firstHealth.hexcolor = "#222";
     }
@@ -56,6 +65,33 @@ function click_secondlevel(app){
         else{
             secondStocks.hexcolor = "#222";
             firstStocks.hexcolor = "#222";
+        }
+    }
+    else if(app == "CTA"){
+        thirdCTA.visible = !ctaopen;
+        if (thirdCTA.visible){
+            firstCTA.hexcolor = "#000";
+        }
+        else{
+            firstCTA.hexcolor = "#444";
+        }
+    }
+    else if(app == "Calendar"){
+        thirdCalendar.visible = !calendaropen;
+        if (thirdCalendar.visible){
+            firstCalendar.hexcolor = "#000";
+        }
+        else{
+            firstCalendar.hexcolor = "#444";
+        }
+    }
+    else if(app == "Todo List"){
+        thirdTodo.visible = !todoopen;
+        if (thirdTodo.visible){
+            firstTodo.hexcolor = "#000";
+        }
+        else{
+            firstTodo.hexcolor = "#444";
         }
     }
     else{
