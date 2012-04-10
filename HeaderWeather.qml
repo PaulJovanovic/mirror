@@ -3,16 +3,15 @@ import QtQuick 1.1
 import "mirrorjs.js" as Handler
 
 Rectangle {
+    property string hexcolor
     width: 490
     height: 140
     radius:40
-    color:"#000"
+    color:hexcolor
     visible: false;
-    Rectangle{
+    Item{
         height:80
         width:460
-        color:"#000"
-        radius:40
         y:55
         x:10
     }

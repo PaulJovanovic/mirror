@@ -2,6 +2,7 @@
 import QtQuick 1.1
 
 Rectangle {
+    property string hexcolor
     Item{
         id:watch
         property int hours
@@ -47,7 +48,7 @@ Rectangle {
     width: 490
     height: 140
     radius:40
-    color:"#000"
+    color:hexcolor
     Item{
         height:60
         width:440

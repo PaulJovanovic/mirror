@@ -3,20 +3,24 @@ import QtQuick 1.1
 import"mirrorjs.js" as Handler
 Rectangle {
     id:home
+
     width: 1024
     height: 728
     Header{
         id:topright
+        hexcolor:"#444"
         x:570
         y:-40
     }
     HeaderWeather{
+        hexcolor:"#444"
         id: secondWeather
         x:-40
         y:-40
     }
 
     WeatherIcon{
+        hexcolor: "#444"
         MouseArea{
             anchors.fill:parent
             onClicked: Handler.click_icon("Weather")
@@ -300,41 +304,44 @@ Rectangle {
     }
 
     PermanentWindow{
+        hexcolor:"#444"
         text:"CTA"
         x:784
         y:110
-        Rectangle{
+        Item{
             x:10
             y:20
             height:170
             width:220
-            color:"#222"
+            //color:"#222"
             //INSERT CTA APPLICATION HERE
         }
     }
     PermanentWindow{
+        hexcolor:"#444"
         text:"Calendar"
         x:784
         y:320
-        Rectangle{
+        Item{
             x:10
             y:20
             height:170
             width:220
-            color:"#222"
+            //color:"#222"
             //INSERT CALENDAR APPLICATION HERE
         }
     }
     PermanentWindow{
+        hexcolor:"#444"
         text:"Todo List"
         x:784
         y:530
-        Rectangle{
+        Item{
             x:10
             y:20
             height:170
             width:220
-            color:"#222"
+            //color:"#222"
             //INSERT TODOLIST APPLICATION HERE
         }
     }

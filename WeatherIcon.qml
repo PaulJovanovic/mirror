@@ -2,9 +2,10 @@
 import QtQuick 1.1
 
 Rectangle {
+    property string hexcolor
     width: 100
     height: 100
-    color:"#000"
+    color:hexcolor
     radius:50
     x: home.width/2-width/2
     Text{

@@ -2,16 +2,16 @@
 import QtQuick 1.1
 
 Rectangle {
+    property string hexcolor
     property alias text: title.text
     width: 250
     height: 200
-    color:"#000"
+    color:hexcolor
     radius:10
-    Rectangle{
+    Item{
         x:10
         height:20
         width:200
-        color:"#000"
         Text{
             id: title
             color: "#fff"
