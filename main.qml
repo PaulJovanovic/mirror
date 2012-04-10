@@ -293,6 +293,12 @@ Rectangle {
         text: "Stocks"
         visible: false
     }
+    WindowSize3{
+        id: thirdPreferences
+        text: "Preferences"
+        visible: false
+    }
+
     PermanentWindow{
         text:"CTA"
         x:784

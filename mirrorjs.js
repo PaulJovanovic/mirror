@@ -7,13 +7,16 @@ function click_secondlevel(app){
     var healthopen = thirdHealth.visible;
     var outfitopen = thirdOutfit.visible;
     var stocksopen = thirdStocks.visible;
+    var preferencesopen = thirdPreferences.visible;
 
     thirdHealth.visible = false;
     thirdOutfit.visible = false;
     thirdStocks.visible = false;
+    thirdPreferences.visible = false;
     secondHealth.hexcolor = "#222";
     secondOutfit.hexcolor = "#222";
     secondStocks.hexcolor = "#222";
+    firstPreferences.hexcolor = "#444";
     if (secondHealth.visible){
         firstHealth.hexcolor = "#222";
     }
@@ -44,7 +47,7 @@ function click_secondlevel(app){
             firstOutfit.hexcolor = "#222";
         }
     }
-    else{
+    else if(app == "Stocks"){
         thirdStocks.visible = !stocksopen;
         if (thirdStocks.visible){
             secondStocks.hexcolor = "#000";
@@ -53,6 +56,15 @@ function click_secondlevel(app){
         else{
             secondStocks.hexcolor = "#222";
             firstStocks.hexcolor = "#222";
+        }
+    }
+    else{
+        thirdPreferences.visible = !preferencesopen;
+        if (thirdPreferences.visible){
+            firstPreferences.hexcolor = "#000";
+        }
+        else{
+            firstPreferences.hexcolor = "#444";
         }
     }
 }
@@ -129,7 +141,7 @@ function click_icon(app){
             secondMusic.visible = false;
         }
     }
-    else{
+    else if(app == "TV"){
         if (secondTV.visible == false){
             if(secondMusic.visible == true){
                 firstMusic.hexcolor = "#444";
@@ -141,6 +153,19 @@ function click_icon(app){
         else{
             firstTV.hexcolor = "#444";
             secondTV.visible = false;
+        }
+    }
+    else{
+        thirdHealth.visible = false;
+        thirdOutfit.visible = false;
+        thirdStocks.visible = false;
+        if (!thirdPreferences.visible){
+            firstPreferences.hexcolor = "#000";
+            thirdPreferences.visible = true;
+        }
+        else{
+            firstPreferences.hexcolor = "#444";
+            thirdPreferences.visible = false;
         }
     }
 
