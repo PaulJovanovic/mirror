@@ -11,24 +11,49 @@ function click_secondlevel(app){
     thirdHealth.visible = false;
     thirdOutfit.visible = false;
     thirdStocks.visible = false;
-    secondHealth.hexcolor = "#000";
-    secondOutfit.hexcolor = "#000";
-    secondStocks.hexcolor = "#000";
+    secondHealth.hexcolor = "#222";
+    secondOutfit.hexcolor = "#222";
+    secondStocks.hexcolor = "#222";
+    if (secondHealth.visible){
+        firstHealth.hexcolor = "#222";
+    }
+    if (secondOutfit.visible)
+        firstOutfit.hexcolor = "#222";
+    if (secondStocks.visible)
+        firstStocks.hexcolor = "#222";
 
     if (app == "Health"){
         thirdHealth.visible = !healthopen;
-        if (thirdHealth.visible)
-            secondHealth.hexcolor = "#444";
+        if (thirdHealth.visible){
+            secondHealth.hexcolor = "#000";
+            firstHealth.hexcolor = "#000";
+        }
+        else{
+            secondHealth.hexcolor = "#222";
+            firstHealth.hexcolor = "#222";
+        }
     }
     else if (app == "Outfit"){
         thirdOutfit.visible = !outfitopen;
-        if (thirdOutfit.visible)
-            secondOutfit.hexcolor = "#444";
+        if (thirdOutfit.visible){
+            secondOutfit.hexcolor = "#000";
+            firstOutfit.hexcolor = "#000";
+        }
+        else{
+            secondOutfit.hexcolor = "#222";
+            firstOutfit.hexcolor = "#222";
+        }
     }
     else{
         thirdStocks.visible = !stocksopen;
-        if (thirdStocks.visible)
-            secondStocks.hexcolor = "#444";
+        if (thirdStocks.visible){
+            secondStocks.hexcolor = "#000";
+            firstStocks.hexcolor = "#000";
+        }
+        else{
+            secondStocks.hexcolor = "#222";
+            firstStocks.hexcolor = "#222";
+        }
     }
 }
 
@@ -42,43 +67,43 @@ function click_icon(app){
     //}
     if (app == "Health"){
         if (secondHealth.visible == false){
-            firstHealth.hexcolor = "#444";
+            firstHealth.hexcolor = "#222";
             secondHealth.visible = true;
         }
         else{
-            firstHealth.hexcolor = "#000";
+            firstHealth.hexcolor = "#444";
             secondHealth.visible = false;
             if (thirdHealth.visible){
-                secondHealth.hexcolor = "#000";
+                secondHealth.hexcolor = "#222";
                 thirdHealth.visible = false;
             }
         }
     }
     else if(app == "Outfit"){
         if (secondOutfit.visible == false){
-            firstOutfit.hexcolor = "#444";
+            firstOutfit.hexcolor = "#222";
             secondOutfit.visible = true;
         }
         else{
-            firstOutfit.hexcolor = "#000";
+            firstOutfit.hexcolor = "#444";
             secondOutfit.visible = false;
             if (thirdOutfit){
                 thirdOutfit.visible = false;
-                secondOutfit.hexcolor = "#000";
+                secondOutfit.hexcolor = "#222";
             }
         }
     }
     else if(app == "Stocks"){
         if (secondStocks.visible == false){
-            firstStocks.hexcolor = "#444";
+            firstStocks.hexcolor = "#222";
             secondStocks.visible = true;
         }
         else{
-            firstStocks.hexcolor = "#000";
+            firstStocks.hexcolor = "#444";
             secondStocks.visible = false;
             if (thirdStocks.visible){
                 thirdStocks.visible = false;
-                secondStocks.hexcolor = "#000";
+                secondStocks.hexcolor = "#222";
             }
         }
     }
@@ -93,28 +118,28 @@ function click_icon(app){
     else if(app == "Music"){
         if (secondMusic.visible == false){
             if(secondTV.visible == true){
-                firstTV.hexcolor = "#000";
+                firstTV.hexcolor = "#444";
                 secondTV.visible = false;
             }
-            firstMusic.hexcolor = "#444";
+            firstMusic.hexcolor = "#000";
             secondMusic.visible = true;
         }
         else{
-            firstMusic.hexcolor = "#000";
+            firstMusic.hexcolor = "#444";
             secondMusic.visible = false;
         }
     }
     else{
         if (secondTV.visible == false){
             if(secondMusic.visible == true){
-                firstMusic.hexcolor = "#000";
+                firstMusic.hexcolor = "#444";
                 secondMusic.visible = false;
             }
-            firstTV.hexcolor = "#444";
+            firstTV.hexcolor = "#000";
             secondTV.visible = true;
         }
         else{
-            firstTV.hexcolor = "#000";
+            firstTV.hexcolor = "#444";
             secondTV.visible = false;
         }
     }
@@ -131,7 +156,7 @@ function click_icon(app){
         if (count == 4){
             yPos-=110;
         }
-    //  leftbar[count].color = "#444";
+    //  leftbar[count].color = "#000";
     }
     if (open == 0){
         var path;

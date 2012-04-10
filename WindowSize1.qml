@@ -4,7 +4,7 @@ import "mirrorjs.js" as Handler
 
 Rectangle {
     property alias text: iconText.text
-    property string hexcolor: "#000"
+    property string hexcolor: "#444"
     width: 50
     height: 50
     radius: 5

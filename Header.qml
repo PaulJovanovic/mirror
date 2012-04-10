@@ -29,7 +29,7 @@ Rectangle {
             seconds = date.getUTCSeconds();
             fulldate = date.toDateString();
             fulldate = fulldate.slice(0,fulldate.length-4);
-            clock.text = "" + fulldate +  " " + hours + ":" + stringmin + " "+ night;
+            clock.text = "" + fulldate  + hours + ":" + stringmin + " "+ night;
         }
 
         Timer{

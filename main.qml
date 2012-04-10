@@ -61,7 +61,7 @@ Rectangle {
     WindowSize2{
         id: secondHealth
         text: "Health"
-        hexcolor: "#000"
+        hexcolor: "#222"
         x:70
         y:110
         Item{
@@ -171,7 +171,7 @@ Rectangle {
     WindowSize2{
         id: secondOutfit
         text: "Outfit"
-        hexcolor: "#000"
+        hexcolor: "#222"
         x:70
         y:220
         Item{
@@ -215,7 +215,7 @@ Rectangle {
     WindowSize2{
         id: secondStocks
         text: "Stocks"
-        hexcolor: "#000"
+        hexcolor: "#222"
         x:70
         y:330
         Item{
@@ -279,7 +279,7 @@ Rectangle {
             y:20
             height:170
             width:220
-            color:"#000"
+            color:"#222"
             //INSERT CTA APPLICATION HERE
         }
     }
@@ -292,7 +292,7 @@ Rectangle {
             y:20
             height:170
             width:220
-            color:"#000"
+            color:"#222"
             //INSERT CALENDAR APPLICATION HERE
         }
     }
@@ -305,7 +305,7 @@ Rectangle {
             y:20
             height:170
             width:220
-            color:"#000"
+            color:"#222"
             //INSERT TODOLIST APPLICATION HERE
         }
     }

@@ -3,13 +3,17 @@ import QtQuick 1.1
 import "mirrorjs.js" as Handler
 
 Rectangle {
-    property string hexcolor: "#000"
+    property string hexcolor: "#222"
     property alias text: title.text
     visible: false
     width: 170
     height: 100
     color:hexcolor
     radius:10
+    MouseArea{
+        anchors.fill: parent
+        onClicked: Handler.click_secondlevel(text)
+    }
     Rectangle {
         width:150
         x:10
@@ -26,7 +30,7 @@ Rectangle {
                 color:"#fff"
             }
         }
-        Rectangle{
+        /*Rectangle{
             x:130
             y:4
             height:8
@@ -36,7 +40,7 @@ Rectangle {
                 anchors.fill: parent
                 onClicked: Handler.click_secondlevel(text)
             }
-        }
+        }*/
         Rectangle{
             x:145
             width:10
