@@ -75,7 +75,7 @@ Rectangle {
                 height:10
                 color:parent.color
                 Text{
-                    color:"#999"
+                    color:"#fff"
                     text: "Health"
                     anchors.centerIn: parent
                 }
@@ -86,7 +86,7 @@ Rectangle {
                 height:10
                 color:parent.color
                 Text{
-                    color:"#fff"
+                    color:"#999"
                     text: "Exercise"
                     anchors.centerIn: parent
                 }
@@ -97,7 +97,7 @@ Rectangle {
                 height:10
                 color:parent.color
                 Text{
-                    color:"#fff"
+                    color:"#999"
                     text: "Sleep"
                     anchors.centerIn: parent
                 }
