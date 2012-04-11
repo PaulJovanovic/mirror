@@ -3,6 +3,33 @@ var secondComponent;
 var leftbar = ['Health','Outfit','Stocks','Music','TV'];
 var leftbaropen = [null,null,null,null,null]
 
+function click_tab(tab){
+    tab_general.hexcolor = "#444";
+    tab_google.hexcolor = "#444";
+    tab_wifi.hexcolor = "#444";
+    content_general.visible = false;
+    content_google.visible = false;
+    content_wifi.visible = false;
+    if (tab == "General"){
+        if (tab_general.hexcolor == "#444"){
+            tab_general.hexcolor = "#fff";
+            content_general.visible = true;
+        }
+    }
+    else if (tab == "Google"){
+        if (tab_google.hexcolor == "#444"){
+            tab_google.hexcolor = "#fff";
+            content_google.visible = true;
+        }
+    }
+    else{
+        if (tab_wifi.hexcolor == "#444"){
+            tab_wifi.hexcolor = "#fff";
+            content_wifi.visible = true;
+        }
+    }
+}
+
 function click_secondlevel(app){
     var healthopen = thirdHealth.visible;
     var outfitopen = thirdOutfit.visible;

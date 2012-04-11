@@ -11,6 +11,7 @@ Rectangle {
     width: 520
     height: 320
     color:hexcolor
+    visible: false
     Rectangle {
         width:500
         x:10

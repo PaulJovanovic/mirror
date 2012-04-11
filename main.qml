@@ -337,6 +337,66 @@ Rectangle {
     WindowSize3{
         id: thirdPreferences
         text: "Preferences"
+        Item{
+            x: 10
+            y: 29
+            Rectangle{
+                y:10
+                width:500
+                height:270
+                color:"#000"
+                border.width:2
+                border.color:"#fff"
+                Item{
+                    x:10
+                    y:16
+                    id: content_general
+                    visible: true
+                    Text{
+                        color:"#fff"
+                        text: "General"
+                    }
+                }
+                Item{
+                    x:10
+                    y:16
+                    id: content_google
+                    visible: false
+                    Text{
+                        color:"#fff"
+                        text: "Google"
+                    }
+                }
+                Item{
+                    x:10
+                    y:16
+                    id: content_wifi
+                    visible: false
+                    Text{
+                        color:"#fff"
+                        text: "Wifi"
+                    }
+                }
+            }
+            Tab{
+                x:10
+                id: tab_general
+                hexcolor: "#fff"
+                text:"General"
+            }
+            Tab{
+                id: tab_google
+                x:122
+                hexcolor: "#444"
+                text:"Google"
+            }
+            Tab{
+                id: tab_wifi
+                x:234
+                hexcolor: "#444"
+                text:"Wifi"
+            }
+        }
     }
 
     //Large CTA Window

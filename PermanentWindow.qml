@@ -1,5 +1,6 @@
 // import QtQuick 1.0 // to target S60 5th Edition or Maemo 5
 import QtQuick 1.1
+import "mirrorjs.js" as Handler
 
 Rectangle {
     property string hexcolor
@@ -8,6 +9,10 @@ Rectangle {
     height: 200
     color:hexcolor
     radius:10
+    MouseArea{
+        anchors.fill:parent
+        onClicked: Handler.click_secondlevel(text)
+    }
     Item{
         x:10
         height:20
