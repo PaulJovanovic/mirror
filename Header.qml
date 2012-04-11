@@ -58,7 +58,7 @@ Rectangle {
             anchors.centerIn: parent
             id:clock
             color:"#fff"
-            font.pixelSize: 48
+            font.pixelSize: 42
         }
     }
 }
