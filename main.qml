@@ -5,7 +5,7 @@ Rectangle {
     id:home
 
     width: 1024
-    height: 728
+    height: 729
     Header{
         id:topright
         hexcolor:"#444"
